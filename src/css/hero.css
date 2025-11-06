@@ -155,6 +155,7 @@ main:has(.back-link) {
   flex-direction: column;
   /* gap: 32px; */
 }
+
 /* TABLET */
 @media screen and (min-width: 768px) {
   .hero-container {
