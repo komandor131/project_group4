@@ -1,0 +1,124 @@
+.footer {
+    background-color: #b58869;
+}
+
+.container-footer {
+    background-color: #c29d84;
+    border: 1px solid rgba(11, 8, 3, 0.15);
+    border-radius: 40px;
+    margin: 24px 16px 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    display: block;
+    padding: 0;
+}
+
+.logo-pic {}
+
+.logo-and-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.socials-footer {}
+
+.footer-socials-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+}
+
+.footer-socials-item {}
+
+.footer-socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.socials-icon {
+    fill: #0B0803;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+
+.footer-navigation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0b0803;
+    font-family: "Quicksand", sans-serif;
+}
+
+.nav-item {}
+
+.copy-text {
+    text-align: center;
+    padding-bottom: 24px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .container-footer {
+        padding: 32px 124px;
+        margin: 24px 32px 32px;
+    }
+
+    .footer-navigation {
+        flex-direction: row;
+    }
+
+    .footer-logo {
+        margin-bottom: 0;
+    }
+
+    .logo-and-socials {
+        flex-direction: row;
+        gap: 40px;
+        align-items: baseline;
+        margin: 0;
+    }
+
+    .logo-pic {
+        width: 84px;
+        height: 36px;
+    }
+
+    .socials-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .container-footer {
+        padding: 32px 48px;
+        margin: 24px 64px 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
