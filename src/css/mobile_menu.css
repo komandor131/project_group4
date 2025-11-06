@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 320px;
     height: 100%;
     z-index: 999;
     transform: translateX(100%);
@@ -41,9 +41,16 @@
 }
 
 .mobile-menu-link {
-    color: #111111;
+    color: #0B0803;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 400;
     transition: color 250ms ease-in-out;
+    font-family: "Quicksand", Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+    color: #7C5D3B;
 }
