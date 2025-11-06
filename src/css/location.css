@@ -1,0 +1,134 @@
+.location-section {
+  padding: 64px 0;
+  color: #0b0803;
+}
+@media only screen and (min-width: 1440px) {
+  .location-container {
+    display: flex;
+    align-items: flex-start;
+
+    justify-content: center;
+    gap: 24px;
+  }
+  .location-wrapper {
+    min-width: 419px;
+  }
+}
+.location-text {
+  font-weight: 600;
+
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.location-title {
+  font-weight: 400;
+  font-size: 36px;
+  font-family: 'Aboreto', sans-serif;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 1440px) {
+  .location-title {
+    font-size: 48px;
+  }
+}
+.location-caption {
+  font-weight: 400;
+  font-size: 18px;
+
+  line-height: 1.5;
+}
+.location-address {
+  font-style: normal;
+  margin-bottom: 32px;
+  margin-top: 40px;
+}
+@media only screen and (min-width: 1440px) {
+  .location-address {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .location-list {
+    display: flex;
+    align-items: baseline;
+    gap: 40px;
+  }
+  .location-item {
+    min-width: 208px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .location-list {
+    flex-direction: column;
+  }
+  .location-item {
+    min-width: 208px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .location-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.location-icon {
+  margin-bottom: 16px;
+}
+.location-item-name {
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+  font-family: 'Aboreto', sans-serif;
+}
+
+.location-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: underline;
+
+  color: #0b0803;
+}
+.location-item-text {
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.location-direction-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #0b0803;
+}
+.map-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location-map {
+  border-radius: 40px;
+  min-width: 288px;
+
+  height: 307px;
+  border: none;
+}
+@media only screen and (min-width: 768px) {
+  .location-map {
+    min-width: 704px;
+    height: 377px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .location-map {
+    min-width: 869px;
+    height: 697px;
+  }
+}
