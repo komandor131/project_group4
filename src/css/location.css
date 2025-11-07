@@ -1,6 +1,6 @@
 .location-section {
   padding: 64px 0;
-  color: #0b0803;
+  color: var(--color-neutral-darkes);
 }
 @media only screen and (min-width: 1440px) {
   .location-container {
@@ -92,7 +92,7 @@
   line-height: 1.5;
   text-decoration: underline;
 
-  color: #0b0803;
+  color: var(--color-neutral-darkes);
 }
 .location-item-text {
   line-height: 1.5;
@@ -106,7 +106,7 @@
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  color: #0b0803;
+  color: var(--color-neutral-darkes);
 }
 .map-wrapper {
   display: flex;

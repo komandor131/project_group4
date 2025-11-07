@@ -1,4 +1,4 @@
-<section class="location-section">
+<section id="location" class="location-section">
   <div class="container location-container">
     <div class="location-wrapper">
       <p class="location-text">Find</p>
@@ -8,7 +8,7 @@
         <ul class="location-list">
           <li class="location-item">
             <svg class="location-icon" width="32" height="32">
-              <use href="/img/sprite.svg#icon-email"></use>
+              <use href="./img/sprite.svg#icon-email"></use>
             </svg>
             <p class="location-item-name">Email</p>
             <a href="mailto:hello@coffeejoy.com" class="location-link"
@@ -17,7 +17,7 @@
           </li>
           <li class="location-item">
             <svg class="location-icon" width="32" height="32">
-              <use href="/img/sprite.svg#icon-tel"></use>
+              <use href="./img/sprite.svg#icon-tel"></use>
             </svg>
             <p class="location-item-name">Phone</p>
             <a href="tel:+1555123-5321" class="location-link"
@@ -26,7 +26,7 @@
           </li>
           <li class="location-item">
             <svg class="location-icon" width="32" height="32">
-              <use href="/img/sprite.svg#icon-geo"></use>
+              <use href="./img/sprite.svg#icon-geo"></use>
             </svg>
             <p class="location-item-name">Office</p>
             <p class="location-item-text">
@@ -38,7 +38,7 @@
             >
               Get Directions
               <svg class="location-icon-link" width="24" height="24">
-                <use href="/img/sprite.svg#icon-arrow-right"></use>
+                <use href="./img/sprite.svg#icon-arrow-right"></use>
               </svg>
             </a>
           </li>
@@ -46,12 +46,14 @@
       </address>
     </div>
 
-    <iframe
-      class="location-map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d406.950795068802!2d-71.08377833554565!3d42.34935224941708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a0f084cda31%3A0x2c61033530218739!2zMjYzIE5ld2J1cnkgU3QsIEJvc3RvbiwgTUEgMDIxMTYsINCh0KjQkA!5e0!3m2!1sru!2spl!4v1762286491572!5m2!1sru!2spl"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+    <div class="map-wrapper">
+      <iframe
+        class="location-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d406.950795068802!2d-71.08377833554565!3d42.34935224941708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a0f084cda31%3A0x2c61033530218739!2zMjYzIE5ld2J1cnkgU3QsIEJvc3RvbiwgTUEgMDIxMTYsINCh0KjQkA!5e0!3m2!1sru!2spl!4v1762286491572!5m2!1sru!2spl"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
   </div>
 </section>
