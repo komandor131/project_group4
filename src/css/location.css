@@ -23,7 +23,7 @@
 .location-title {
   font-weight: 400;
   font-size: 36px;
-  font-family: 'Aboreto', sans-serif;
+  font-family: var(--second-family);
   line-height: 1.2;
   letter-spacing: -0.01em;
   margin-bottom: 24px;
