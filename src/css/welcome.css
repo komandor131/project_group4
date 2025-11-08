@@ -1,9 +1,3 @@
-.section {}
-
-
-.container {}
-
-
 .welcome-container {
     display: flex;
     flex-direction: column;
@@ -137,31 +131,29 @@
 }
 
 
-.welcom-icon {
+.welcome-icon {
     fill: #fff;
 }
 
 
 
 
-.welcom-img {
+.welcome-img {
     border-radius: 40px;
-    width: 288px;
     height: 162px;
 }
 
 
 @media only screen and (min-width: 768px) {
-    .welcom-img {
+    .welcome-img {
         width: 704px;
-        height: 396px;
+        height: auto;
     }
 }
 
 
 @media only screen and (min-width: 1440px) {
-    .welcom-img {
+    .welcome-img {
         width: 1312px;
-        height: 738px;
     }
 }
