@@ -52,6 +52,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  background-color: var(--Color-Scheme-1-Background, rgba(224, 203, 180, 1));
 }
 
 main {
@@ -63,6 +64,7 @@ main:has(.back-link) {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
