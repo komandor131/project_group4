@@ -23,7 +23,7 @@ export default defineConfig(({ command }) => {
         // !!! ВИПРАВЛЕННЯ: Явно вказуємо єдиний вхідний HTML-файл 
         // (шлях відносно 'root: src')
         input: {
-          main: './index.html', 
+          main: '.src/index.html', 
         },
         output: {
           manualChunks(id) {
