@@ -1,0 +1,107 @@
+.testimonials .container {
+    background: var(--color-coffee-lighter, #e0cbb4);
+    padding: 64px 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .testimonials .container {
+        max-width: 768px;
+        padding: 64px 32px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .testimonials .container {
+        max-width: 1440px;
+        padding: 64px;
+    }
+}
+
+.testimonials-titel {
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--color-neutral-darkest, #0b0803);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .testimonials-titel {
+        width: 363px;
+    }
+}
+
+.testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.testimonials-item {
+    background-color: var(--color-coffee-light, #c29d84);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--opacity-neutral-darkest-15, rgba(11, 8, 3, 0.15) );
+    border-radius: 32px;
+    padding: 32px;
+    width: 100%;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .testimonials-item {
+        width: calc((100% - 24px)/2);
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .testimonials-item {
+        width: calc((100% - 72px)/4);
+    }
+}
+
+.testimonials-item:nth-child(1) .testimonials-item-stars:last-child,
+.testimonials-item:nth-child(2) .testimonials-item-stars:last-child, .testimonials-item:nth-child(7) .testimonials-item-stars:last-child,
+.testimonials-item:nth-child(8) .testimonials-item-stars:last-child {
+    fill: transparent;
+    stroke: currentColor;
+}
+
+.testimonials-item:nth-child(4) .testimonials-item-stars:nth-last-child(-n+2),
+.testimonials-item:nth-child(6) .testimonials-item-stars:nth-last-child(-n+2){
+    fill: transparent;
+    stroke: currentColor;
+}
+.testimonials-list-stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 24px;
+}
+
+.testimonials-descr {
+    font-family: var(--font-family, "Quicksand",
+            sans-serif);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-neutral-darkest, #0b0803);
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+    .testimonials-descr {
+        margin-bottom: auto;
+    }
+}
+
+.testimonials-name {
+    font-family: var(--font-family, "Quicksand",
+            sans-serif);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-neutral-darkest, #0b0803);
+}
