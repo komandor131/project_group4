@@ -1,6 +1,7 @@
 
 import { defineConfig } from 'vite';
-import { glob } from 'glob';
+
+// import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
@@ -10,12 +11,15 @@ export default defineConfig(({ command }) => {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
-    root: 'src', //
+    
+    root: 'src', 
     build: {
       sourcemap: true,
       rollupOptions: {
-        
-        input: glob.sync('**/*.html'),
+      
+        input: {
+          main: './index.html', 
+        },
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
@@ -29,7 +33,6 @@ export default defineConfig(({ command }) => {
             return '[name].js';
           },
           assetFileNames: assetInfo => {
-            
             if (assetInfo.name && assetInfo.name.endsWith('.html')) {
               return '[name].[ext]';
             }
