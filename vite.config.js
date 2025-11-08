@@ -8,7 +8,7 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
-    // !!! ДОДАНО: Вказуємо базовий шлях для розгортання на GitHub Pages
+  
     base: '/project_group4/', 
     
     define: {
@@ -23,7 +23,7 @@ export default defineConfig(({ command }) => {
         // !!! ВИПРАВЛЕННЯ: Явно вказуємо єдиний вхідний HTML-файл 
         // (шлях відносно 'root: src')
         input: {
-          main: '.src/index.html', 
+          main: './index.html', 
         },
         output: {
           manualChunks(id) {
