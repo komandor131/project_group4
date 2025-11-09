@@ -1,19 +1,27 @@
+
 .hero-section {
   padding: 108px 32px;
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/img/img1.jpg);
-  max-width: 1440px;
+    url(../img/img1.jpg);
+  max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
 }
+@media (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../img/img1@2x.jpg);
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .hero-section {
     padding: 311px 176px 311px 0px;
+    justify-content: flex-start;
   }
 }
 
@@ -23,23 +31,16 @@
   }
 }
 
-@media (min-resolution: 192dpi) {
-  .hero-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(/img/img1@2x.jpg);
-  }
-}
-
 @media screen and (min-width: 768px) {
   .hero-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(/img/img1.jpg);
+      url(../img/img1.jpg);
   }
 
   @media (min-resolution: 192dpi) {
     .hero-section {
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(/img/img1@2x.jpg);
+        url(../img/img1@2x.jpg);
     }
   }
 }
@@ -47,13 +48,13 @@
 @media screen and (min-width: 1440px) {
   .hero-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(/img/img1.jpg);
+      url(../img/img1.jpg);
   }
 
   @media (min-resolution: 192dpi) {
     .hero-section {
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(/img/img1@2x.jpg);
+        url(../img/img1@2x.jpg);
     }
   }
 }
