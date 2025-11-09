@@ -14,7 +14,7 @@
 @media (min-resolution: 192dpi) {
   .hero-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../img/img1@2x.jpg);
+      url(/img/img1@2x.jpg);
   }
 }
 
@@ -34,13 +34,13 @@
 @media screen and (min-width: 768px) {
   .hero-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../img/img1.jpg);
+      url(/img/img1.jpg);
   }
 
   @media (min-resolution: 192dpi) {
     .hero-section {
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../img/img1@2x.jpg);
+        url(/img/img1@2x.jpg);
     }
   }
 }
@@ -48,13 +48,13 @@
 @media screen and (min-width: 1440px) {
   .hero-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../img/img1.jpg);
+      url(/img/img1.jpg);
   }
 
   @media (min-resolution: 192dpi) {
     .hero-section {
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../img/img1@2x.jpg);
+        url(/img/img1@2x.jpg);
     }
   }
 }
