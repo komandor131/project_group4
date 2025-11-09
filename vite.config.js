@@ -3,6 +3,13 @@ import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
+import { defineConfig } from 'vite'
+import path from 'path'
+
+export default defineConfig({
+  base: '/project_group4/', // <- ОБОВ'ЯЗКОВО для GitHub Pages в підпапці
+  // інші налаштування...
+})
 
 export default defineConfig(({ command }) => {
   return {
