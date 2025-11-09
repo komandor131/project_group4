@@ -48,6 +48,7 @@ line-height: 1.5;
 text-align: center;
 color: #0b0803;
 margin-top: 24px;
+margin-bottom: 0;
 }
 .quality-list {
  list-style-type: none;
@@ -68,7 +69,8 @@ margin-top: 32px;
  border-radius: 32px;
 width: 288px;
 height: 164px;
-margin-bottom: 32px;
+
+margin-top: 24px;
 }
 .quality-head {
     font-weight: 600;
@@ -76,7 +78,8 @@ font-size: 20px;
 line-height: 1.5;
 text-align: center;
 color: #0b0803;
-margin-top: 0;
+margin-top: 32px;
+margin-bottom: 0;
 }
 .quality-discription {
     font-weight: 400;
@@ -85,7 +88,6 @@ line-height: 1.5;
 text-align: center;
 color: #0b0803;
 margin-top: 8px;
-margin-bottom: 24px;
 }
 
 
