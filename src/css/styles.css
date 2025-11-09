@@ -10,7 +10,7 @@
 @import url("./hero.css");
 @import url("./welcome.css");
 @import url("./quality.css");
-@import url("./expirience.css");
+@import url("..styles/expirience.css");
 @import url("./subscribe.css");
 @import url("./testimonials.css");
 @import url("./location.css");
