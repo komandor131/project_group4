@@ -1,0 +1,122 @@
+
+
+/* гумова */
+.expirience-container {
+    padding: 0 16px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+}
+.expirience-h2 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--color-scheme-1-text);
+    font-family: var(--second-family);
+    margin-bottom: 24px;
+}
+.expirience-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-scheme-1-text);
+    margin-bottom: 32px;
+}
+.photos-expirience {
+    display: block;
+    margin-top: 32px;
+}
+.coffee-gallary {
+    max-width: 100%;
+    height: auto;
+    border-radius: 32px;
+    display: block;
+}
+.item-gallary {
+ margin-bottom: 32px;
+}
+.item-gallary:nth-child(7) img {
+    height: 391px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 32px;
+}
+@media screen and (min-width: 1440px) {
+    .expirience-container {
+        max-width: 1440px;
+        padding: 0 64px;
+    }
+
+    .expirience-h2 {
+        font-weight: 400;
+        font-size: 48px;
+    }
+
+    .photos-expirience ul {
+        column-count: 3;
+        column-gap: 32px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .item-gallary {
+        margin-bottom: 32px;
+        break-inside: avoid;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .item-gallary:last-child {
+        margin-bottom: 0;
+    }
+
+    .item-gallary img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .expirience-container {
+        max-width: 1440px;
+        padding: 0 64px;
+    }
+
+    .expirience-h2 {
+        font-weight: 400;
+        font-size: 48px;
+    }
+
+    .photos-expirience ul {
+        column-count: 3;
+        column-gap: 32px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .item-gallary {
+        margin-bottom: 32px;
+        break-inside: avoid;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .item-gallary:last-child {
+        margin-bottom: 0;
+    }
+
+    .item-gallary img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
