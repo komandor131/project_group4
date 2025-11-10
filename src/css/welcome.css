@@ -76,10 +76,16 @@
 .welcome-second-p {
     font-size: 18px;
     margin-bottom: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0b0803;
 }
 
-
-.welcome-btn-box {
+.welcome-btn {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
     border-radius: 100px;
     padding-block: 10px;
     padding-inline: 24px;
@@ -92,11 +98,15 @@
         inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
         inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
     background: #6f4e37;
+    width: 100%;
+    transition:
+        background-color 300ms ease,
+        box-shadow 300ms ease,
+        opacity 200ms ease;
 }
 
-
-.welcome-btn-box:hover,
-.welcome-btn-box:focus-within {
+.welcome-btn:hover,
+.welcome-btn:focus-within {
     box-shadow:
         0 1px 2px 0 rgba(11, 8, 3, 0.05),
         inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2),
@@ -108,26 +118,20 @@
 }
 
 
-.welcome-btn-box:active {
+.welcome-btn:active {
     background: #6f4e37;
     opacity: 1;
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.25),
+        inset 0 -2px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
 
 @media only screen and (min-width: 768px) {
-    .welcome-btn-box {
+    .welcome-btn {
         width: 181px;
     }
 }
-
-
-.welcome-btn {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    align-items: center;
-}
-
 
 .welcome-span {
     font-weight: 500;
@@ -145,7 +149,8 @@
 
 .welcome-img {
     border-radius: 40px;
-    height: 162px;
+    height: auto;
+    width: 100%;
 }
 
 
