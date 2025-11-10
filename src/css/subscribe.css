@@ -33,23 +33,29 @@ body {
 
 /* ---------- Base (mobile) ---------- */
 #subscribe {
-    padding: 0;
+    padding: 64px 0;
     background: #e0cbb4;
 }
 
 .subscribe-container {
     background: transparent;
     width: 100%;
-    max-width: 480px;
+    min-width: 320px;
+    max-width: 375px;
     margin: 0 auto;
-    padding: 64px 16px;
+    padding: 0 16px;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
+.subscribe-content,
+.subscribe-image {
+    min-width: 0;
+}
+
 .subscribe-content {
-    max-width: 480px;
+    max-width: none;
     text-align: left;
 }
 
@@ -165,7 +171,6 @@ body {
     white-space: normal;
 }
 
-/* ---------- Images (base / mobile) ---------- */
 .subscribe-image {
     width: 100%;
     border-radius: 16px;
@@ -181,43 +186,41 @@ body {
     object-position: 47% 64%;
 }
 
-/* ---------- Tablet ≥768 (GRID) ---------- */
+/* ---------- Tablet ≥768  ---------- */
 @media (min-width: 768px) {
     .subscribe-container {
         width: 100%;
-        max-width: none;
-        padding: 32px;
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 32px;
         align-items: flex-start;
         gap: 40px;
     }
 
-
-          .subscribe-content {
-              align-self: flex-start;
-              text-align: left;
-              margin-left: 0;
-              margin-right: auto;
-              max-width: 640px;
-          }
+    .subscribe-content {
+        text-align: left;
+        margin-left: 0;
+        margin-right: auto;
+        
+    }
 
     .subscribe-title,
     .subscribe-text {
-        max-width: 704px;
+        max-width: none;
     }
 
     .subscribe-form {
         flex-direction: row;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 24px;
-            width: auto;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        width: 100%;
     }
 
     .field {
-                flex: 0 1 340px;
-                /* не росте, але адаптивно стискається */
-                min-width: 280px;
-                max-width: 340px;
+        flex: 0 1 340px;
+        min-width: 280px;
+        max-width: 340px;
     }
 
     .subscribe-input {
@@ -227,9 +230,8 @@ body {
         background: rgba(255, 255, 255, .35);
     }
 
-            
     .subscribe-btn {
-    flex: 0 0 158px;
+        flex: 0 0 158px;
         min-width: 158px;
         height: 44px;
         padding: 0 24px;
@@ -237,14 +239,14 @@ body {
     }
 
     .subscribe-note {
-                order: 2;
-                text-align: left;
-                flex: 0 0 522px;
-                max-width: 522px;
+        order: 2;
+        text-align: left;
+        flex: 0 0 100%;
+        max-width: none;
     }
 
     .subscribe-image {
-        max-width: 704px;
+        width: 100%;
         border-radius: 24px;
         overflow: hidden;
     }
@@ -258,12 +260,13 @@ body {
     }
 }
 
-/* ---------- Desktop ≥1158 (GRID) ---------- */
-@media (min-width: 1158px) {
+/* ---------- Desktop ≥1440  ---------- */
+@media (min-width: 1440px) {
     .subscribe-container {
-        max-width: none;
-        margin: 0;
-        padding: 64px 64px;
+        width: 1440px;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 64px;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -271,12 +274,15 @@ body {
     }
 
     .subscribe-content {
-        flex: 1 1 0;
+        flex: 0 0 640px;
         max-width: 640px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .subscribe-form {
-    flex-direction: row;
+        flex-direction: row;
         flex-wrap: wrap;
         gap: 16px;
         max-width: 640px;
@@ -284,9 +290,8 @@ body {
 
     .field {
         flex: 1 1 339px;
-            min-width: 339px;
-            max-width: 339px;
-            /* верхня межа, щоб не розповзалось */
+        min-width: 339px;
+        max-width: 339px;
     }
 
     .subscribe-title {
@@ -300,9 +305,8 @@ body {
 
     .subscribe-note {
         order: 2;
-            flex: 0 0 513px;
-            max-width: 513px;
-
+        flex: 0 0 513px;
+        max-width: 513px;
     }
 
     .subscribe-btn {
@@ -312,17 +316,16 @@ body {
     }
 
     .subscribe-image {
-        flex: 1 1 0;
+        flex: 0 0 640px;
         max-width: 640px;
         border-radius: 32px;
         overflow: hidden;
     }
 
     .subscribe-img {
+        aspect-ratio: auto;
         width: 100%;
         height: auto;
-        object-fit: cover;
-        object-position: 55% 45%;
+        object-fit: contain;
     }
 }
-
