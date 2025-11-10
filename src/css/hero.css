@@ -1,14 +1,21 @@
+
 .hero-section {
   padding: 108px 0px;
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/img/img1.jpg);
-  max-width: 1440px;
+    url(../img/img1.jpg);
+  max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
+}
+@media (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(/img/img1@2x.jpg);
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -20,13 +27,6 @@
 @media only screen and (min-width: 1440px) {
   .hero-section {
     padding: 259px 0px 259px 64px;
-  }
-}
-
-@media (min-resolution: 192dpi) {
-  .hero-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(/img/img1@2x.jpg);
   }
 }
 
