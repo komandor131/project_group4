@@ -42,8 +42,8 @@
   --color-scheme-2-accent: var(--color-neutral-darkest);
   --color-scheme-2-foreground: var(--color-coffee);
   --color-error-red: #7f1c1c;
-  --font-family: "Quicksand", sans-serif;
-  --second-family: "Aboreto", sans-serif;
+  --font-family: 'Quicksand', sans-serif;
+  --second-family: 'Aboreto', sans-serif;
 }
 
 body {
@@ -109,18 +109,6 @@ address {
   border: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .backdrop {
   width: 100%;
   height: 100%;
@@ -141,6 +129,7 @@ address {
   visibility: visible;
   pointer-events: initial;
   transition-delay: 0ms;
+  z-index: 1000;
 }
 
 .modal {
@@ -157,6 +146,7 @@ address {
     rgba(0, 0, 0, 0.12) 0px 1px 3px 0px, rgba(0, 0, 0, 0.2) 0px 2px 1px 0px;
   border-radius: 40px;
   padding: 64px 16px 24px;
+  z-index: 1000;
 }
 
 .backdrop.subscription-open .modal {
