@@ -54,7 +54,9 @@ body {
   margin: 0;
   background-color: var(--color-scheme-1-background);
 }
-
+body:has(.subscription-open) {
+  overflow: hidden;
+}
 main {
   flex-grow: 1;
 }
