@@ -1,5 +1,8 @@
-
 /* гумова */
+.expirience-section {
+    padding: 64px 0px;
+}
+
 .expirience-container {
     padding: 0 16px;
     margin: 0 auto;
@@ -45,6 +48,10 @@
 
 .item-gallary {
     margin-bottom: 32px;
+}
+
+.item-gallary:last-child {
+    margin-bottom: 0;
 }
 
 .item-gallary:nth-child(7) img {
@@ -128,12 +135,11 @@
         flex: unset;
     }
 
-    .item-gallary:last-child {
+    /* .item-gallary:last-child {
         margin-bottom: 0;
-    }
+    } */
 
-  */
-    .item-gallary img {
+    */ .item-gallary img {
         width: 100%;
         height: auto;
         display: block;

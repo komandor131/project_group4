@@ -67,7 +67,7 @@ body {
     line-height: 1.2;
     letter-spacing: -0.01em;
     color: #0b0803;
-    max-width: 288px;
+    width: 100%;
 }
 
 .subscribe-text {
@@ -75,7 +75,7 @@ body {
     font-size: 18px;
     line-height: 1.5;
     color: #0b0803;
-    max-width: 288px;
+    width: 100%;
 }
 
 .subscribe-form {
@@ -167,7 +167,7 @@ body {
     font-size: 12px;
     line-height: 1.5;
     color: rgba(11, 8, 3, .8);
-    max-width: 288px;
+    width: 100%;
     white-space: normal;
 }
 
@@ -201,7 +201,7 @@ body {
         text-align: left;
         margin-left: 0;
         margin-right: auto;
-        
+
     }
 
     .subscribe-title,
