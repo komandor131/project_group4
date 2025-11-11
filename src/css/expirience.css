@@ -1,5 +1,4 @@
 
-
 /* гумова */
 .expirience-container {
     padding: 0 16px;
@@ -67,7 +66,7 @@
     .expirience-container {
         max-width: 768px;
         padding: 0 32px;
-        height: 1348px;
+        /* height: 1348px; <-- ВИСОТУ ПРИБРАНО */
     }
 
     .photos-expirience ul {
@@ -133,9 +132,17 @@
         margin-bottom: 0;
     }
 
+  */
     .item-gallary img {
         width: 100%;
         height: auto;
         display: block;
+    }
+
+    .item-gallary:nth-child(7) img {
+        height: auto;
+        /* Скидаємо фіксовану висоту */
+        object-fit: initial;
+        /* Скидаємо 'cover' */
     }
 }
