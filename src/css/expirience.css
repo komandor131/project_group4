@@ -6,10 +6,11 @@
     margin: 0 auto;
     width: 100%;
     display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
 }
+
 .expirience-h2 {
     font-weight: 400;
     font-size: 36px;
@@ -20,6 +21,7 @@
     font-family: var(--second-family);
     margin-bottom: 24px;
 }
+
 .expirience-text {
     font-family: var(--font-family);
     font-weight: 400;
@@ -29,65 +31,76 @@
     color: var(--color-scheme-1-text);
     margin-bottom: 32px;
 }
+
 .photos-expirience {
     display: block;
     margin-top: 32px;
 }
+
 .coffee-gallary {
     max-width: 100%;
     height: auto;
     border-radius: 32px;
     display: block;
 }
+
 .item-gallary {
- margin-bottom: 32px;
+    margin-bottom: 32px;
 }
+
 .item-gallary:nth-child(7) img {
     height: 391px;
     object-fit: cover;
     width: 100%;
     border-radius: 32px;
 }
-@media screen and (min-width: 1440px) {
+
+/* Від 375px - фіксований контейнер */
+@media screen and (min-width: 375px) {
     .expirience-container {
-        max-width: 1440px;
-        padding: 0 64px;
-    }
-
-    .expirience-h2 {
-        font-weight: 400;
-        font-size: 48px;
-    }
-
-    .photos-expirience ul {
-        column-count: 3;
-        column-gap: 32px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .item-gallary {
-        margin-bottom: 32px;
-        break-inside: avoid;
-        display: inline-block;
-        width: 100%;
-    }
-
-    .item-gallary:last-child {
-        margin-bottom: 0;
-    }
-
-    .item-gallary img {
-        width: 100%;
-        height: auto;
-        display: block;
+        max-width: 375px;
     }
 }
+
+/* Від 768px - планшет */
+@media screen and (min-width: 768px) {
+    .expirience-container {
+        max-width: 768px;
+        padding: 0 32px;
+        height: 1348px;
+    }
+
+    .photos-expirience ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .item-gallary {
+        margin-bottom: 0;
+        flex: 0 0 calc(50% - 16px);
+    }
+
+    .item-gallary:nth-child(7) {
+        flex: 0 0 100%;
+    }
+
+    .item-gallary:nth-child(7) img {
+        width: 100%;
+        height: 391px;
+        object-fit: cover;
+    }
+}
+
+/* Від 1440px - десктоп */
 @media screen and (min-width: 1440px) {
     .expirience-container {
         max-width: 1440px;
         padding: 0 64px;
+        height: auto;
     }
 
     .expirience-h2 {
@@ -101,6 +114,7 @@
         list-style: none;
         padding: 0;
         margin: 0;
+        display: block;
     }
 
     .item-gallary {
@@ -108,6 +122,11 @@
         break-inside: avoid;
         display: inline-block;
         width: 100%;
+        flex: unset;
+    }
+
+    .item-gallary:nth-child(7) {
+        flex: unset;
     }
 
     .item-gallary:last-child {
