@@ -1,3 +1,5 @@
+@import url('./base.css');
+@import url('./container.css');
 
 .header-container {
     display: flex;
@@ -11,8 +13,8 @@
 }
 
 .header-logo {
-    display: block;
-    padding: 18px 0;
+    display: flex;
+    align-items: center;
 }
 
 .burger-button {
@@ -28,34 +30,38 @@
 
 .burger-icon {
     display: block;
-    fill: #0B0803;
+    fill: #0b0803;
 }
 
 @media screen and (min-width: 768px) {
+    .header-container {
+        padding: 0 32px;
+    }
+
     .burger-button {
         display: none;
     }
 
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    
+
     .nav-list {
-        font-family: "Quicksand", sans-serif;
+        font-family: 'Quicksand', sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
-        color: #0B0803;
+        color: #0b0803;
         display: flex;
         align-items: center;
         gap: 32px;
-        margin-left: 100px;
         flex-direction: row;
-    }
-
-    .header-nav {
-        display: flex;
-        align-items: center;
-    }
-
-    .header-logo {
-        padding: 24px 0;
     }
 
     .nav-link {
@@ -64,7 +70,7 @@
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #2E2F42;
+        color: #6f4e37;
         padding: 24px 0;
         display: block;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -78,53 +84,43 @@
         left: 0;
         bottom: -1px;
         border-radius: 2px;
-        background-color: #6F4E37;
+        background-color: #6f4e37;
         opacity: 0;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .nav-link:hover,
-    .nav-link:focus,
-    .nav-link.current {
-        color: #6F4E37;
+    .nav-link:focus {
+        color: #0b0803;
     }
 
     .nav-link:hover::after,
-    .nav-link:focus::after,
-    .nav-link.current::after {
+    .nav-link:focus::after {
         opacity: 1;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .header-logo {
-        margin-left: 64px;
-      margin-right: 772px;
+    .header-container {
+        padding: 0 64px;
     }
 
-    .header-container {
-        display: flex;
-        align-items: center;
+    .nav-list {
+        gap: 32px;
     }
 
     .nav-link {
-        font-family: "Quicksand", sans-serif;
+        font-family: 'Quicksand', sans-serif;
         padding: 24px 0;
         position: relative;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #6F4E37;
+        color: #6f4e37;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            flex-direction: row;
-            gap: 32px;
+        display: block;
     }
 
-    .location-off {
-        display: none;
-    }
+  
 }
